@@ -18,7 +18,7 @@ const Pricing = () => {
         <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           {/* Pricing Options */}
            {Options.map((option, index) => (
-            <PricingOptions title={option.title} description={option.description} price={option.price} priceDescription={option.priceDescription} features={option.features} key={index} />
+            <PricingOptions option={option} key={index} />
            ))}
           
           
